@@ -44,6 +44,9 @@
   color: white !important;
 }
 
+.btn:active {
+  color: white !important;
+}
 .btn-primary {
   color: white !important;
 }
