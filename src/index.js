@@ -10,9 +10,9 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <Router>
-    <header className="p-3 mb-3 border-bottom">
+    <header className="px-3 mb-3 border-bottom">
       <div>
-        <div class="container d-inline d-lg-none">
+        <div class="container d-inline d-lg-none p-0 m-0">
           <div class="row justify-content-center">
             <div class="col-1 p-0">
               <img class="logo" src={require("./img/NW.png")} />
