@@ -9,6 +9,7 @@ import Index from "./components/index.js";
 import reportWebVitals from "./reportWebVitals";
 import Faq from "./components/faq";
 import Precios from "./components/precios";
+import Soporte from "./components/soporte";
 
 ReactDOM.render(
   <Router>
@@ -109,7 +110,7 @@ ReactDOM.render(
           <Route path="/" element={<Index />} />
           <Route path="/precios" element={<Precios />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/soporte" element={<About />} />
+          <Route path="/soporte" element={<Soporte />} />
           <Route path="/inventarios" element={<About />} />
           <Route path="/movimientos" element={<About />} />
         </Routes>

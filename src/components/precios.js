@@ -3,6 +3,8 @@ import { Card, CardGroup, Container, Button, ListGroup, ListGroupItem } from "re
 export default function Precios() {
     return (
         <Container>
+            <h1 class="display-4 fw-normal text-center">Precios sencillos</h1>
+            <h3 className="text-muted text-center p-4">Echa un vistazo a nuestras opciones de precios</h3>
         <CardGroup>
             <Card className="m-2 text-center">
             <Card.Header className="p-3">Gratis</Card.Header>
