@@ -8,6 +8,7 @@ import { Row, Col, NavItem, Nav, Navbar } from "react-bootstrap";
 import Index from "./components/index.js";
 import reportWebVitals from "./reportWebVitals";
 import Faq from "./components/faq";
+import Precios from "./components/precios";
 
 ReactDOM.render(
   <Router>
@@ -106,7 +107,7 @@ ReactDOM.render(
         <hr />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/precios" element={<About />} />
+          <Route path="/precios" element={<Precios />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/soporte" element={<About />} />
           <Route path="/inventarios" element={<About />} />
