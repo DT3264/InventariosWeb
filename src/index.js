@@ -10,6 +10,8 @@ import reportWebVitals from "./reportWebVitals";
 import Faq from "./components/faq";
 import Movimientos from "./components/movimientos";
 import Inventario from "./components/inventarioEx";
+import Precios from "./components/precios";
+import Soporte from "./components/soporte";
 
 ReactDOM.render(
   <Router>
@@ -112,9 +114,9 @@ ReactDOM.render(
         <hr />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/precios" element={<About />} />
+          <Route path="/precios" element={<Precios />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/soporte" element={<About />} />
+          <Route path="/soporte" element={<Soporte />} />
           <Route path="/inventarios" element={<Inventario />} />
           <Route path="/movimientos" element={<Movimientos />} />
         </Routes>
