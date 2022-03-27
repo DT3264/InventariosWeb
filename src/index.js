@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Row, Col, NavItem, Nav, Navbar } from "react-bootstrap";
 import Index from "./components/index.js";
 import reportWebVitals from "./reportWebVitals";
+import Faq from "./components/faq";
 
 ReactDOM.render(
   <Router>
@@ -106,7 +107,7 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/precios" element={<About />} />
-          <Route path="/faq" element={<About />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/soporte" element={<About />} />
           <Route path="/inventarios" element={<About />} />
           <Route path="/movimientos" element={<About />} />
