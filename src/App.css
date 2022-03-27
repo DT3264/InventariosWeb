@@ -40,3 +40,10 @@
 .logo {
   width: 50px;
 }
+.btn:hover {
+  color: white !important;
+}
+
+.btn-primary {
+  color: white !important;
+}

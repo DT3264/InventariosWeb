@@ -1,4 +1,4 @@
-import { Carousel, Container, Row, Col } from "react-bootstrap";
+import { Carousel, Container, Row, Col, Image } from "react-bootstrap";
 
 function Slider() {
   return (
@@ -208,14 +208,44 @@ function Extra2() {
               </div>
             </div>
           </div>
-          <div>
-            <Container className="container">
-              <Row>
-                <img src={require("./../img/img2.png")} alt="..." />
-                <Col></Col>
-              </Row>
-            </Container>
-          </div>
+          <Image fluid src={require("./../img/img2.jpg")} alt="..." />
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Extra3() {
+  return (
+    <>
+      <div className="b-example-divider" />
+      <div className="container">
+        <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 className="display-4 fw-normal">Precios</h1>
+          <p className="fs-5 text-muted">
+            Obtenga un vistazo de los planes que ofrecemos{" "}
+            <a href="precios.html">aquí</a>
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function Extra4() {
+  return (
+    <>
+      <div className="b-example-divider" />
+      <div className="container">
+        <div className="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 className="display-4 fw-normal">Sobre nosotros</h1>
+          <p className="fs-5 text-muted">
+            Northwind es una empresa ubicada en Uriangato, Guanajuato
+            comprometidos con crear sistemas de calidad y que provee software
+            como servicio enfocado a la gestión de inventarios de las empresas
+            con módulos diseñados para facilitar las tareas que suelen
+            presentarse con la gestión de inventario.
+          </p>
         </div>
       </div>
     </>
@@ -228,6 +258,8 @@ export default function Index() {
       <Slider />
       <Extra1 />
       <Extra2 />
+      <Extra3 />
+      <Extra4 />
     </>
   );
 }

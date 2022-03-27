@@ -4,69 +4,24 @@ import "./index.css";
 import "./App.css";
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavItem from "react-bootstrap/NavItem";
+import { Row, Col, NavItem, Nav, Navbar } from "react-bootstrap";
 import Index from "./components/index.js";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <Router>
     <div>
-      <header>
-        <div>
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li>
-                <a href="index.html" class="nav-link px-2 link-dark">
-                  Inicio
-                </a>
-              </li>
-              <li>
-                <a href="precios.html" class="nav-link px-2 link-dark">
-                  Precios
-                </a>
-              </li>
-              <li>
-                <a href="faq.html" class="nav-link px-2 link-dark">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="soporte.html" class="nav-link px-2 link-dark">
-                  Soporte
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-2 link-secondary">
-                  Inventarios
-                </a>
-              </li>
-              <li>
-                <a href="movInventario.html" class="nav-link px-2 link-dark">
-                  Movimientos
-                </a>
-              </li>
-            </ul>
-
-            <div class="col-md-4 text-end">
-              <button type="button" class="btn btn-outline-primary me-2">
-                Inicio de sesión
-              </button>
-              <button type="button" class="btn btn-primary">
-                Registrarse
-              </button>
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-1 p-0">
+            <img class="logo" src={require("./img/NW.png")} />
           </div>
         </div>
-      </header>
+      </div>
       <Navbar>
-        <Navbar.Brand href="#home">
-          <img class="logo" src={require("./img/NW.png")} />
-        </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <NavItem eventkey={1} href="/">
               <Nav.Link as={Link} to="/">
                 Home
@@ -97,9 +52,39 @@ ReactDOM.render(
                 Movimientos
               </Nav.Link>
             </NavItem>
+            <NavItem
+              className="d-none d-lg-flex"
+              eventkey={1}
+              href="/movimientos"
+            >
+              <button type="button" class="btn btn-outline-primary me-2">
+                Inicio de sesión
+              </button>
+            </NavItem>
+            <NavItem
+              className="d-none d-lg-flex"
+              eventkey={1}
+              href="/movimientos"
+            >
+              <button type="button" class="btn btn-primary">
+                Registrarse
+              </button>
+            </NavItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      <Row className="justify-content-center text-center d-lg-none p-0 m-0">
+        <Col className="p-0 m-0">
+          <button type="button" class="btn btn-outline-primary me-2">
+            Inicio de sesión
+          </button>
+        </Col>
+        <Col className="p-0 m-0">
+          <button type="button" class="btn btn-primary">
+            Registrarse
+          </button>
+        </Col>
+      </Row>
       <hr />
       <Routes>
         <Route path="/" element={<Index />} />
