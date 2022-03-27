@@ -1,4 +1,4 @@
-import { Carousel } from "react-bootstrap";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
 
 function Slider() {
   return (
@@ -21,33 +21,204 @@ function Slider() {
   );
 }
 
-function Extra() {
+function Extra1() {
   return (
-    <div className="container col-xxl-8 px-4 py-5">
-      <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div className="col-10 col-sm-8 col-lg-6">
-          <img
-            src={require("./../img/img1.png")}
-            className="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width={700}
-            height={500}
-            loading="lazy"
-          />
+    <>
+      <Container className="container col-xxl-8 px-4 py-5">
+        <Row className="flex-lg-row-reverse align-items-center g-5 py-5">
+          <Col className="col-10 col-sm-8 col-lg-6">
+            <img
+              src={require("./../img/img1.png")}
+              className="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width={700}
+              height={500}
+              loading="lazy"
+            />
+          </Col>
+          <Col className="col-lg-6">
+            <h1 className="display-5 fw-bold lh-1 mb-3">
+              Simplifique su gestión de inventarios
+            </h1>
+            <p className="lead">
+              Sofware de gestión de inventario y pedidos adaptados a la forma de
+              venta. Brinde a sus gerentes de operaciones, finanzas, almacén y
+              comercio electrónico las herramientas que necesitan para trabajar
+              juntos de manera más eficiente y sin problemas.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </>
+  );
+}
+
+function Extra2() {
+  return (
+    <>
+      <div className="container">
+        <hr className="featurette-divider" />
+        <div className="row featurette align-items-center">
+          <div className="col-md-7">
+            <h3>
+              <span className="text-muted">Gestión de órdenes de trabajo</span>
+            </h3>
+            <h2 className="featurette-heading">
+              Gestione las órdenes de trabajo en un solo lugar{" "}
+            </h2>
+            <p className="lead">
+              Kit de herramientas todo en uno para departamentos de
+              mantenimiento. Todo lo que necesita desde programación y
+              finalización de órdenes de trabajo.
+            </p>
+          </div>
+          <div className="col-md-5">
+            <img
+              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width={500}
+              height={500}
+              src={require("./../img/img1.png")}
+              alt="..."
+            />
+          </div>
         </div>
-        <div className="col-lg-6">
-          <h1 className="display-5 fw-bold lh-1 mb-3">
-            Simplifique su gestión de inventarios
-          </h1>
-          <p className="lead">
-            Sofware de gestión de inventario y pedidos adaptados a la forma de
-            venta. Brinde a sus gerentes de operaciones, finanzas, almacén y
-            comercio electrónico las herramientas que necesitan para trabajar
-            juntos de manera más eficiente y sin problemas.
-          </p>
+        <div className="b-example-divider" />
+        <hr className="featurette-divider " />
+        <div className="row featurette align-items-center">
+          <div className="col-md-7 order-md-2">
+            <h3>
+              <span className="text-muted">Aplicaciónes de terceros</span>
+            </h3>
+            <h2 className="featurette-heading">
+              Ahorre tiempo con una integración perfecta
+            </h2>
+            <p className="lead">
+              El sisestá diseñado para integrarse abiertamente con cualquier
+              sistema a través de servicios web
+            </p>
+          </div>
+          <div className="col-md-5 order-md-1">
+            <img
+              className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width={500}
+              height={500}
+              src={require("./../img/img1.png")}
+              alt="..."
+            />
+          </div>
+        </div>
+        <div className="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 className="display-4 fw-bold">Gestión simplificada</h1>
+          <div className="col-lg-6 mx-auto">
+            <div className="d-flex text-muted pt-3">
+              <svg
+                className="bd-placeholder-img flex-shrink-0 me-2 rounded"
+                width={32}
+                height={32}
+                role="img"
+                aria-label="Placeholder: 32x32"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#007bff" />
+                <text x="50%" y="50%" fill="#007bff" dy=".3em">
+                  32x32
+                </text>
+              </svg>
+              <div className="pb-3 mb-0 small lh-sm w-100">
+                <div className="d-flex justify-content-between">
+                  <strong className="lead">
+                    Gestión completa del catálogo de productos
+                  </strong>
+                </div>
+              </div>
+            </div>
+            <div className="d-flex text-muted pt-3">
+              <svg
+                className="bd-placeholder-img flex-shrink-0 me-2 rounded"
+                width={32}
+                height={32}
+                role="img"
+                aria-label="Placeholder: 32x32"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#007bff" />
+                <text x="50%" y="50%" fill="#007bff" dy=".3em">
+                  32x32
+                </text>
+              </svg>
+              <div className="pb-3 mb-0 small lh-sm w-100">
+                <div className="d-flex justify-content-between">
+                  <strong className="lead">
+                    Cree y administre productos simples, variantes y
+                    empaquetados
+                  </strong>
+                </div>
+              </div>
+            </div>
+            <div className="d-flex text-muted pt-3">
+              <svg
+                className="bd-placeholder-img flex-shrink-0 me-2 rounded"
+                width={32}
+                height={32}
+                role="img"
+                aria-label="Placeholder: 32x32"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#007bff" />
+                <text x="50%" y="50%" fill="#007bff" dy=".3em">
+                  32x32
+                </text>
+              </svg>
+              <div className="pb-3 mb-0 small lh-sm w-100">
+                <div className="d-flex justify-content-between">
+                  <strong className="lead">
+                    Recoger, empacar y enviar artículos desde un almacén
+                  </strong>
+                </div>
+              </div>
+            </div>
+            <div className="d-flex text-muted pt-3">
+              <svg
+                className="bd-placeholder-img flex-shrink-0 me-2 rounded"
+                width={32}
+                height={32}
+                role="img"
+                aria-label="Placeholder: 32x32"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#007bff" />
+                <text x="50%" y="50%" fill="#007bff" dy=".3em">
+                  32x32
+                </text>
+              </svg>
+              <div className="pb-3 mb-0 small lh-sm w-100">
+                <div className="d-flex justify-content-between">
+                  <strong className="lead">
+                    Informe de inventario pendiente y valoración{" "}
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <Container className="container">
+              <Row>
+                <img src={require("./../img/img2.png")} alt="..." />
+                <Col></Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -55,7 +226,8 @@ export default function Index() {
   return (
     <>
       <Slider />
-      <Extra />
+      <Extra1 />
+      <Extra2 />
     </>
   );
 }
