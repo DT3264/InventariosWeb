@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.f67f2062.css",
-    "main.js": "/static/js/main.4c83b0c3.js",
-    "static/js/787.a6424946.chunk.js": "/static/js/787.a6424946.chunk.js",
-    "static/media/slider3.png": "/static/media/slider3.4f62aa2ec216049fed3b.png",
-    "static/media/slider1.jpg": "/static/media/slider1.7397b1d8375450259c64.jpg",
-    "static/media/img2.jpg": "/static/media/img2.3258392c717721613293.jpg",
-    "static/media/img1.png": "/static/media/img1.dc1004820e67f6dbc1bd.png",
-    "static/media/NW.png": "/static/media/NW.a9f40f20c2295ea6402c.png",
-    "index.html": "/index.html",
-    "main.f67f2062.css.map": "/static/css/main.f67f2062.css.map",
-    "main.4c83b0c3.js.map": "/static/js/main.4c83b0c3.js.map",
-    "787.a6424946.chunk.js.map": "/static/js/787.a6424946.chunk.js.map"
+    "main.css": "/InventariosWeb/static/css/main.f67f2062.css",
+    "main.js": "/InventariosWeb/static/js/main.6cb8df10.js",
+    "static/js/787.a6424946.chunk.js": "/InventariosWeb/static/js/787.a6424946.chunk.js",
+    "static/media/slider3.png": "/InventariosWeb/static/media/slider3.4f62aa2ec216049fed3b.png",
+    "static/media/slider1.jpg": "/InventariosWeb/static/media/slider1.7397b1d8375450259c64.jpg",
+    "static/media/img2.jpg": "/InventariosWeb/static/media/img2.3258392c717721613293.jpg",
+    "static/media/img1.png": "/InventariosWeb/static/media/img1.dc1004820e67f6dbc1bd.png",
+    "static/media/NW.png": "/InventariosWeb/static/media/NW.a9f40f20c2295ea6402c.png",
+    "index.html": "/InventariosWeb/index.html",
+    "main.f67f2062.css.map": "/InventariosWeb/static/css/main.f67f2062.css.map",
+    "main.6cb8df10.js.map": "/InventariosWeb/static/js/main.6cb8df10.js.map",
+    "787.a6424946.chunk.js.map": "/InventariosWeb/static/js/787.a6424946.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f67f2062.css",
-    "static/js/main.4c83b0c3.js"
+    "static/js/main.6cb8df10.js"
   ]
 }
