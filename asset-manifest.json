@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/InventariosWeb/static/css/main.f67f2062.css",
-    "main.js": "/InventariosWeb/static/js/main.6cb8df10.js",
+    "main.js": "/InventariosWeb/static/js/main.3bd85a80.js",
     "static/js/787.a6424946.chunk.js": "/InventariosWeb/static/js/787.a6424946.chunk.js",
     "static/media/slider3.png": "/InventariosWeb/static/media/slider3.4f62aa2ec216049fed3b.png",
     "static/media/slider1.jpg": "/InventariosWeb/static/media/slider1.7397b1d8375450259c64.jpg",
@@ -10,11 +10,11 @@
     "static/media/NW.png": "/InventariosWeb/static/media/NW.a9f40f20c2295ea6402c.png",
     "index.html": "/InventariosWeb/index.html",
     "main.f67f2062.css.map": "/InventariosWeb/static/css/main.f67f2062.css.map",
-    "main.6cb8df10.js.map": "/InventariosWeb/static/js/main.6cb8df10.js.map",
+    "main.3bd85a80.js.map": "/InventariosWeb/static/js/main.3bd85a80.js.map",
     "787.a6424946.chunk.js.map": "/InventariosWeb/static/js/787.a6424946.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f67f2062.css",
-    "static/js/main.6cb8df10.js"
+    "static/js/main.3bd85a80.js"
   ]
 }
