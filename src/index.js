@@ -3,7 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "./App.css";
 import "./App.scss";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Navigate,
+} from "react-router-dom";
 import { Row, Col, NavItem, Nav, Navbar } from "react-bootstrap";
 import Index from "./components/index.js";
 import reportWebVitals from "./reportWebVitals";
@@ -19,18 +25,29 @@ ReactDOM.render(
       <div>
         <div className="container d-inline d-lg-none p-0 m-0">
           <div className="row justify-content-center">
-            <div className="col-1 p-0">
+            {/* <div className="col-1 p-0">
               <img className="logo" src={require("./img/NW.png")} alt="..." />
+            </div> */}
+            <div className="containerLogos col-1 p-0">
+              <img className="logoN" src={require("./img/N.png")} alt="..." />
+              <img className="logoW" src={require("./img/W.png")} alt="..." />
             </div>
           </div>
         </div>
 
         <Navbar className="">
-          <img
+          {/* <img
             className="logo d-none d-lg-inline"
             src={require("./img/NW.png")}
             alt="..."
-          />
+          /> */}
+          <a
+            href="/"
+            className="align-items-center mb-2 mb-lg-0 text-dark text-decoration-none d-none d-lg-flex"
+          >
+            <img className="logoN" src={require("./img/N.png")} alt="..." />
+            <img className="logoW" src={require("./img/W.png")} alt="..." />
+          </a>
           <a
             href="/"
             className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
@@ -119,23 +136,13 @@ ReactDOM.render(
           <Route path="/soporte" element={<Soporte />} />
           <Route path="/inventarios" element={<Inventario />} />
           <Route path="/movimientos" element={<Movimientos />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </header>
   </Router>,
   document.getElementById("root")
 );
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>That feels like an existential question, don't you think?</p>
-      </main>
-    </>
-  );
-}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

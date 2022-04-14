@@ -32,14 +32,102 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.logo {
+.containerLogos {
+  position: relative;
+}
+
+.logo,
+.logoN,
+.logoW {
   width: 50px;
 }
+
+.logoN,
+.logoW {
+  position: absolute;
+}
+
+.logoN {
+  opacity: 0;
+  left: -40px;
+  scale: 0.5;
+  animation: animationN 6s 1s normal forwards;
+}
+
+@keyframes animationN {
+  0% {
+    opacity: 0;
+    left: -40px;
+    scale: 0.5;
+  }
+
+  30% {
+    opacity: 100;
+    left: 0px;
+    scale: 0.5;
+  }
+
+  67% {
+    opacity: 100;
+    left: 0px;
+    scale: 0.5;
+  }
+
+  81% {
+    opacity: 100;
+    left: 0px;
+    scale: 1.2;
+  }
+
+  100% {
+    opacity: 100;
+    left: 0px;
+    scale: 1;
+  }
+}
+
+.logoW {
+  opacity: 0;
+  left: 40px;
+  scale: 0.5;
+  animation: animationW 4s 3s normal forwards;
+}
+
+@keyframes animationW {
+  0% {
+    opacity: 0;
+    left: 40px;
+    scale: 0.5;
+  }
+
+  50% {
+    opacity: 100;
+    left: 0px;
+    scale: 0.5;
+  }
+
+  75% {
+    opacity: 100;
+    left: 0px;
+    scale: 1.2;
+  }
+
+  100% {
+    opacity: 100;
+    left: 0px;
+    scale: 1;
+  }
+}
+
+
+
+
 .btn:hover {
   color: white !important;
 }
@@ -47,6 +135,7 @@
 .btn:active {
   color: white !important;
 }
+
 .btn-primary {
   color: white !important;
 }
