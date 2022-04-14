@@ -98,7 +98,7 @@ function LoginForm(props) {
             </button>
           </form>
         </div>
-        <div className="overlay-container">
+        <div className="overlay-container d-none d-md-inline">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
               <h1>Bienvenid@</h1>
@@ -112,7 +112,7 @@ function LoginForm(props) {
                 Ingresar
               </button>
             </div>
-            <div className="overlay-panel overlay-right">
+            <div className="overlay-panel overlay-right d-none d-md-flex">
               <h1>¡Hola!</h1>
               <p>Si aún no tienes cuenta, puedes registrarte</p>
               <button

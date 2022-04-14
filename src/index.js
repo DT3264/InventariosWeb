@@ -4,7 +4,6 @@ import "./index.css";
 import "./App.css";
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Row, Col } from "react-bootstrap";
 import Index from "./components/index.js";
 import reportWebVitals from "./reportWebVitals";
 import Faq from "./components/faq";
@@ -27,19 +26,6 @@ ReactDOM.render(
         </div>
 
         <AppNavBar />
-        <Row className="justify-content-center text-center d-lg-none p-0 m-0">
-          <Col className="p-0 m-0">
-            <button type="button" className="btn btn-outline-primary me-2">
-              Inicio de sesión
-            </button>
-          </Col>
-          <Col className="p-0 m-0">
-            <button type="button" className="btn btn-primary">
-              Registrarse
-            </button>
-          </Col>
-        </Row>
-        <hr />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/precios" element={<Precios />} />

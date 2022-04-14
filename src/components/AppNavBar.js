@@ -1,4 +1,4 @@
-import { NavItem, Nav, Navbar, Button, Modal } from "react-bootstrap";
+import { Row, Col, NavItem, Nav, Navbar, Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import LoginForm from "./LoginForm";
@@ -85,6 +85,28 @@ export default function AppNavBar() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+
+      <Row className="justify-content-center text-center d-lg-none p-0 m-0">
+        <Col className="p-0 m-0">
+          <button
+            type="button"
+            className="btn btn-outline-primary me-2"
+            onClick={handleShowLogin}
+          >
+            Inicio de sesión
+          </button>
+        </Col>
+        <Col className="p-0 m-0">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={handleShowSignup}
+          >
+            Registrarse
+          </button>
+        </Col>
+      </Row>
+      <hr />
 
       <Modal size="lg" show={show} onHide={handleClose}>
         <LoginForm registro={show == 1 ? false : true} />
