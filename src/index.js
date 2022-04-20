@@ -12,6 +12,7 @@ import Inventario from "./components/inventarioEx";
 import Precios from "./components/precios";
 import Soporte from "./components/soporte";
 import AppNavBar from "./components/AppNavBar";
+import LogoMiguel from "./components/logoMiguel";
 
 ReactDOM.render(
   <Router>
@@ -33,6 +34,7 @@ ReactDOM.render(
           <Route path="/soporte" element={<Soporte />} />
           <Route path="/inventarios" element={<Inventario />} />
           <Route path="/movimientos" element={<Movimientos />} />
+          <Route path="/logoMiguel" element={<LogoMiguel />} />
         </Routes>
       </div>
     </header>
